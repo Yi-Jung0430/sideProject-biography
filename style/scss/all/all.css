@@ -1,0 +1,244 @@
+@charset "UTF-8";
+.title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.engStytle {
+  font-style: italic;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "微軟正黑體", "Roboto";
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .3;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+p {
+  line-height: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.banner {
+  position: relative;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+  background-position: center;
+  background-size: cover;
+  height: 958px;
+  color: #fff;
+}
+
+.banner__inner {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+  font-size: 80px;
+  margin-bottom: 46px;
+}
+
+.banner h1 span {
+  font-size: 24px;
+  line-height: 0px;
+}
+
+.banner h3 {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 32px;
+}
+
+.banner ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about {
+  padding-top: 64px;
+  padding-bottom: 56px;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 40px;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000;
+}
+
+.about img {
+  width: auto;
+  margin: 0 auto 24px auto;
+}
+
+.about ul {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+.about__detail li {
+  margin-bottom: 8px;
+}
+
+.about__list li {
+  margin-bottom: 32px;
+}
+
+.about__list li::before {
+  content: " ";
+  display: inline-block;
+  margin-right: 16px;
+  height: 22px;
+  width: 22px;
+  background-color: #891818;
+  border-radius: 50%;
+}
+
+.about_border {
+  color: #000;
+  height: 2px;
+  max-width: 384px;
+  margin: 32px auto;
+}
+
+.brand {
+  background-color: #000;
+  padding-top: 64px;
+  padding-bottom: 160px;
+  text-align: center;
+  color: #fff;
+}
+
+.brand h2 {
+  font-size: 64px;
+  line-height: 75px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.brand li:first-child {
+  font-size: 24px;
+  line-height: 42px;
+  padding-bottom: 32px;
+}
+
+.brand li:last-child {
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 68px;
+}
+
+.brand__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.brand__flex img:first-child {
+  margin-bottom: 40px;
+}
+
+.brand__flex img:nth-child(2) {
+  margin-right: 24px;
+}
+
+.works {
+  padding-top: 64px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.works h2 {
+  margin-bottom: 24px;
+  font-size: 64px;
+  line-height: 75px;
+  color: #000;
+}
+
+.works p {
+  margin-bottom: 56px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.works__flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works img {
+  margin-bottom: 16px;
+}
+
+.works li {
+  margin-bottom: 36px;
+}
+
+.contact {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  background-color: #000;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 64px;
+  line-height: 75px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.contact li {
+  font-size: 24px;
+}
+
+.contact li:first-child {
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=all.css.map */

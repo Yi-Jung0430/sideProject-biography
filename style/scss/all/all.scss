@@ -1,0 +1,234 @@
+// 變數設定
+
+// 顏色
+$primary: #891818;
+$secondary: #fff;
+$third: #000;
+
+// 字體大小
+$font-xl: 80px;
+$font-x: 64px;
+$font-m: 24px;
+$font-s: 20px;
+
+//行高
+$line-height-l: 42px;
+$line-height-m: 36px;
+$line-height-s: 30px;
+
+// 標題二共用樣式
+@mixin h2 ($color) {
+  font-size: 64px;
+  line-height: 75px;
+  color: $color;
+}
+
+// 標題共用樣式
+.title {
+  font-weight: bold;
+  font-style: italic;
+} 
+
+//斜體共用樣式
+.engStytle {
+  font-style: italic;
+}
+
+// 全域設定
+* { box-sizing: border-box; }
+
+body { font-family:"微軟正黑體", "Roboto"; }
+
+a { 
+  color:$secondary;
+  text-decoration: none;
+  &:hover {
+    opacity: .3;
+  };
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img { display: block; }
+
+p { line-height: 30px; }
+
+// END 全域設定 
+
+
+// 個別設定
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// banner設定
+.banner {
+  position: relative;;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+  background-position: center;
+  background-size: cover;
+  height: 958px;
+  color: $secondary;
+  
+  &__inner {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-size: $font-xl;
+    margin-bottom: 46px;
+    
+    span {
+      font-size: $font-m;
+      line-height: 0px;
+    }
+  }
+  
+  h3 {
+    font-size: $font-m;
+    line-height: $line-height-m;
+    margin-bottom: 32px;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+// about 
+.about {
+  padding-top: 64px;
+  padding-bottom: 56px;
+  text-align: center;
+  
+  h2 {
+    margin-bottom: 40px;
+    @include h2 ($third);
+  }
+  
+  img {
+    width: auto;
+    margin: 0 auto 24px auto;
+  }
+  
+  ul { 
+    font-size: $font-m;
+    font-weight: bold;
+    line-height: $line-height-m;
+  }
+  
+  &__detail {
+    li { margin-bottom: 8px; }
+  }
+  
+  &__list {
+    li { margin-bottom: 32px; }
+     
+    li::before {
+      content: " ";
+      display: inline-block;
+      margin-right: 16px;
+      height: 22px;
+      width: 22px;
+      background-color: $primary;
+      border-radius: 50%;
+    }
+  }
+  
+  &_border {
+    color: $third;
+    height: 2px;
+    max-width: 384px;
+    margin: 32px auto;
+  }
+}
+
+// my brand
+.brand {
+  background-color: $third;
+  padding-top: 64px;
+  padding-bottom: 160px;
+  text-align: center;
+  color: $secondary;
+  
+  h2 {
+    @include h2 ($secondary);
+    margin-bottom: 16px;
+  }
+  
+  li:first-child {
+    font-size: $font-m;
+    line-height: $line-height-l;
+    padding-bottom: 32px;
+  }
+  
+  li:last-child {
+    font-size: $font-s;
+    line-height: $line-height-s;
+    padding-bottom: 68px;
+  }
+  
+  &__flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    img:first-child { margin-bottom: 40px; }
+    
+    img:nth-child(2) { margin-right: 24px; }
+  }
+}
+
+//works
+.works {
+  padding-top: 64px;
+  padding-bottom: 100px;
+  text-align: center;
+  
+  h2 {
+    margin-bottom: 24px;
+    @include h2 ($third);
+  }
+  
+  p {
+    margin-bottom: 56px;
+    font-size: $font-s;
+    line-height: $line-height-s;
+    font-weight: bold;
+  }
+  
+  &__flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  img { margin-bottom: 16px; }
+  
+  li { margin-bottom: 36px; }
+}
+
+// contact
+.contact {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  background-color: $third;
+  text-align: center;
+  h2 {
+    @include h2 ($secondary);
+    margin-bottom: 16px;
+  }
+  li {
+    font-size: $font-m;
+    
+    &:first-child { margin-bottom: 16px; }
+  }
+}
